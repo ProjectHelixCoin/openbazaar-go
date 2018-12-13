@@ -6,7 +6,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/phoreproject/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
 )
 
 var SettingsNotSetError error = errors.New("Settings not set")

@@ -5,11 +5,11 @@ import (
 
 	"time"
 
-	btc "github.com/phoreproject/btcutil"
-	notif "github.com/phoreproject/openbazaar-go/api/notifications"
-	"github.com/phoreproject/openbazaar-go/ipfs"
-	"github.com/phoreproject/openbazaar-go/pb"
-	"github.com/phoreproject/wallet-interface"
+	btc "github.com/projecthelixcoin/btcutil"
+	notif "github.com/projecthelixcoin/openbazaar-go/api/notifications"
+	"github.com/projecthelixcoin/openbazaar-go/ipfs"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
+	"github.com/projecthelixcoin/wallet-interface"
 )
 
 type Datastore interface {

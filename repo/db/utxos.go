@@ -3,9 +3,9 @@ package db
 import (
 	"database/sql"
 	"encoding/hex"
-	"github.com/phoreproject/btcd/chaincfg/chainhash"
-	"github.com/phoreproject/btcd/wire"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcd/chaincfg/chainhash"
+	"github.com/projecthelixcoin/btcd/wire"
+	"github.com/projecthelixcoin/wallet-interface"
 	"strconv"
 	"strings"
 	"sync"

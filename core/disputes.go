@@ -15,11 +15,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/phoreproject/btcutil"
-	hd "github.com/phoreproject/btcutil/hdkeychain"
-	"github.com/phoreproject/openbazaar-go/api/notifications"
-	"github.com/phoreproject/openbazaar-go/pb"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcutil"
+	hd "github.com/projecthelixcoin/btcutil/hdkeychain"
+	"github.com/projecthelixcoin/openbazaar-go/api/notifications"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
+	"github.com/projecthelixcoin/wallet-interface"
 	"golang.org/x/net/context"
 )
 

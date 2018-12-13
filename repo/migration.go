@@ -6,7 +6,7 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/phoreproject/openbazaar-go/repo/migrations"
+	"github.com/projecthelixcoin/openbazaar-go/repo/migrations"
 )
 
 type Migration interface {

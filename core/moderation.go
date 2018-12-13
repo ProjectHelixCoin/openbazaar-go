@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	"github.com/OpenBazaar/jsonpb"
-	"github.com/phoreproject/openbazaar-go/ipfs"
-	"github.com/phoreproject/openbazaar-go/pb"
+	"github.com/projecthelixcoin/openbazaar-go/ipfs"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
 	"golang.org/x/net/context"
 )
 

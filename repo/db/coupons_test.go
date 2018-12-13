@@ -2,7 +2,7 @@ package db
 
 import (
 	"database/sql"
-	"github.com/phoreproject/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
 	"testing"
 )
 

@@ -41,13 +41,13 @@ Go should now be installed.
 ### Install openbazaar-go
 
 ```
-go get github.com/phoreproject/openbazaar-go
+go get github.com/projecthelixcoin/openbazaar-go
 ```
 
-It will put the source code in $GOPATH/src/github.com/phoreproject/openbazaar-go
+It will put the source code in $GOPATH/src/github.com/projecthelixcoin/openbazaar-go
 
 To compile and run the source:
 ```
-cd $GOPATH/src/github.com/phoreproject/openbazaar-go
+cd $GOPATH/src/github.com/projecthelixcoin/openbazaar-go
 go run openbazaard.go start
 ```

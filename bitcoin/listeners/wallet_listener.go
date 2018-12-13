@@ -3,10 +3,10 @@ package bitcoin
 import (
 	"encoding/hex"
 
-	"github.com/phoreproject/btcd/chaincfg/chainhash"
-	"github.com/phoreproject/openbazaar-go/api/notifications"
-	"github.com/phoreproject/openbazaar-go/repo"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcd/chaincfg/chainhash"
+	"github.com/projecthelixcoin/openbazaar-go/api/notifications"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
+	"github.com/projecthelixcoin/wallet-interface"
 )
 
 type WalletListener struct {

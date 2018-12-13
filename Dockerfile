@@ -10,12 +10,12 @@ ENV PATH=$GOPATH/bin:$PATH
 RUN apk add --no-cache git gcc musl-dev
 RUN go get -v github.com/golang/dep/cmd/dep
 ENV PATH=$GOPATH/bin:$PATH
-COPY . /go/src/github.com/phoreproject/openbazaar-go
-WORKDIR /go/src/github.com/phoreproject/openbazaar-go
-RUN go get -v github.com/phoreproject/btcutil
+COPY . /go/src/github.com/projecthelixcoin/openbazaar-go
+WORKDIR /go/src/github.com/projecthelixcoin/openbazaar-go
+RUN go get -v github.com/projecthelixcoin/btcutil
 RUN go get -v github.com/btcsuite/websocket
-RUN go get -v github.com/phoreproject/spvwallet
-RUN go get -v github.com/phoreproject/wallet-interface
+RUN go get -v github.com/projecthelixcoin/spvwallet
+RUN go get -v github.com/projecthelixcoin/wallet-interface
 RUN go get -v github.com/dropbox/dropbox-sdk-go-unofficial/dropbox/...
 RUN go build --ldflags '-extldflags "-static"' -o /opt/openbazaard .
 

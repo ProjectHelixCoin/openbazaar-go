@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/phoreproject/openbazaar-go/pb"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
 	"testing"
 )
 

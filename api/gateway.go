@@ -7,8 +7,8 @@ import (
 
 	"github.com/ipfs/go-ipfs/core/corehttp"
 	"github.com/op/go-logging"
-	"github.com/phoreproject/openbazaar-go/core"
-	"github.com/phoreproject/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/core"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
 )
 
 var log = logging.MustGetLogger("api")

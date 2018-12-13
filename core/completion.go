@@ -16,12 +16,12 @@ import (
 	"github.com/OpenBazaar/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/phoreproject/btcd/chaincfg/chainhash"
-	"github.com/phoreproject/btcd/wire"
-	hd "github.com/phoreproject/btcutil/hdkeychain"
-	"github.com/phoreproject/openbazaar-go/ipfs"
-	"github.com/phoreproject/openbazaar-go/pb"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcd/chaincfg/chainhash"
+	"github.com/projecthelixcoin/btcd/wire"
+	hd "github.com/projecthelixcoin/btcutil/hdkeychain"
+	"github.com/projecthelixcoin/openbazaar-go/ipfs"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
+	"github.com/projecthelixcoin/wallet-interface"
 )
 
 const (

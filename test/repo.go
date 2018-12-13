@@ -6,8 +6,8 @@ import (
 
 	"time"
 
-	"github.com/phoreproject/openbazaar-go/repo"
-	"github.com/phoreproject/openbazaar-go/repo/db"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/repo/db"
 )
 
 // Repository represents a test (temporary/volitile) repository

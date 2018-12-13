@@ -7,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/phoreproject/openbazaar-go/repo/migrations"
+	"github.com/projecthelixcoin/openbazaar-go/repo/migrations"
 
 	"path/filepath"
 	"runtime"
@@ -18,7 +18,7 @@ import (
 	"github.com/ipfs/go-ipfs/repo/fsrepo"
 	"github.com/mitchellh/go-homedir"
 	"github.com/op/go-logging"
-	"github.com/phoreproject/openbazaar-go/ipfs"
+	"github.com/projecthelixcoin/openbazaar-go/ipfs"
 	"github.com/tyler-smith/go-bip39"
 )
 

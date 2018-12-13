@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/phoreproject/openbazaar-go/pb"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
 )
 
 type messageSender struct {

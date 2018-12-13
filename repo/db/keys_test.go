@@ -5,8 +5,8 @@ import (
 	"crypto/rand"
 	"database/sql"
 	"encoding/hex"
-	"github.com/phoreproject/btcd/btcec"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcd/btcec"
+	"github.com/projecthelixcoin/wallet-interface"
 	"testing"
 )
 

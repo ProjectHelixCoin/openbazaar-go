@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/op/go-logging"
-	"github.com/phoreproject/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
 )
 
 var log = logging.MustGetLogger("cmd")

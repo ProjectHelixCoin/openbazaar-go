@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/phoreproject/openbazaar-go/ipfs"
+	"github.com/projecthelixcoin/openbazaar-go/ipfs"
 )
 
 type PointersDB struct {

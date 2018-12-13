@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	"github.com/phoreproject/btcd/chaincfg"
-	"github.com/phoreproject/btcutil"
-	"github.com/phoreproject/openbazaar-go/pb"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/btcd/chaincfg"
+	"github.com/projecthelixcoin/btcutil"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
+	"github.com/projecthelixcoin/wallet-interface"
 )
 
 var saldb SalesDB

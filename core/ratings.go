@@ -12,8 +12,8 @@ import (
 	"path"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/phoreproject/btcd/btcec"
-	"github.com/phoreproject/openbazaar-go/pb"
+	"github.com/projecthelixcoin/btcd/btcec"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
 )
 
 func ValidateRating(rating *pb.Rating) (bool, error) {

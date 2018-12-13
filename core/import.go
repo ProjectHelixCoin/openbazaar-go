@@ -16,7 +16,7 @@ import (
 
 	"github.com/OpenBazaar/jsonpb"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/phoreproject/openbazaar-go/pb"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
 )
 
 const bufferSize = 5

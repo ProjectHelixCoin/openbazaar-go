@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"github.com/OpenBazaar/jsonpb"
-	"github.com/phoreproject/openbazaar-go/pb"
-	"github.com/phoreproject/openbazaar-go/repo"
+	"github.com/projecthelixcoin/openbazaar-go/pb"
+	"github.com/projecthelixcoin/openbazaar-go/repo"
 	"sync"
 	"time"
 )

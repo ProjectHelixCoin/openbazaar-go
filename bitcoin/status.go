@@ -3,7 +3,7 @@ package bitcoin
 import (
 	"context"
 	"encoding/json"
-	"github.com/phoreproject/wallet-interface"
+	"github.com/projecthelixcoin/wallet-interface"
 	"time"
 )
 
