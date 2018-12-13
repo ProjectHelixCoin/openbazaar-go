@@ -225,12 +225,12 @@ func addConfigExtensions(repoRoot string, testnet bool) error {
 		return err
 	}
 	var w WalletConfig = WalletConfig{
-		Type:             "phored",
+		Type:             "helixd",
 		MaxFee:           2000,
 		HighFeeDefault:   160,
 		MediumFeeDefault: 60,
 		LowFeeDefault:    20,
-		RPCLocation:      "rpc.phore.io",
+		RPCLocation:      "rpc.helix-crypto.com",
 	}
 
 	var a APIConfig = APIConfig{

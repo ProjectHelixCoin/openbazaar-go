@@ -36,7 +36,7 @@ import (
 	"github.com/projecthelixcoin/openbazaar-go/bitcoin"
 	"github.com/projecthelixcoin/openbazaar-go/bitcoin/exchange"
 	lis "github.com/projecthelixcoin/openbazaar-go/bitcoin/listeners"
-	"github.com/projecthelixcoin/openbazaar-go/bitcoin/phored"
+	"github.com/projecthelixcoin/openbazaar-go/bitcoin/helixd"
 	"github.com/projecthelixcoin/openbazaar-go/bitcoin/resync"
 	"github.com/projecthelixcoin/openbazaar-go/core"
 	"github.com/projecthelixcoin/openbazaar-go/ipfs"
@@ -294,10 +294,10 @@ func (x *Start) Execute(args []string) error {
 	} else if x.DualStack {
 		cfg.Addresses.Swarm = []string{}
 		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, onionAddrString)
-		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip4/0.0.0.0/tcp/5001")
-		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip6/::/tcp/5001")
-		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip6/::/tcp/10005/ws")
-		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip4/0.0.0.0/tcp/5005/ws")
+		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip4/0.0.0.0/tcp/6001")
+		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip6/::/tcp/6001")
+		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip6/::/tcp/11005/ws")
+		cfg.Addresses.Swarm = append(cfg.Addresses.Swarm, "/ip4/0.0.0.0/tcp/6005/ws")
 	}
 	// Iterate over our address and process them as needed
 	var onionTransport *oniontp.OnionTransport
@@ -467,10 +467,10 @@ func (x *Start) Execute(args []string) error {
 	var resyncManager *resync.ResyncManager
 	var cryptoWallet wallet.Wallet
 	switch strings.ToLower(walletCfg.Type) {
-	case "phored":
-		cryptoWallet = phored.NewRPCWallet(mn, &params, repoPath, sqliteDB, walletCfg.RPCLocation)
+	case "helixd":
+		cryptoWallet = helixd.NewRPCWallet(mn, &params, repoPath, sqliteDB, walletCfg.RPCLocation)
 	default:
-		log.Fatal("Unknown wallet type. Valid wallet types: phored")
+		log.Fatal("Unknown wallet type. Valid wallet types: helixd")
 	}
 
 	// Push nodes

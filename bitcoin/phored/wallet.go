@@ -1,4 +1,4 @@
-package phored
+package helixd
 
 import (
 	"bytes"
@@ -97,7 +97,7 @@ func (w *RPCWallet) Start() {
 	ticker := time.NewTicker(time.Second * 30)
 	go func() {
 		for range ticker.C {
-			log.Fatal("Failed to connect to phored")
+			log.Fatal("Failed to connect to helixd")
 		}
 	}()
 	for {
@@ -189,7 +189,7 @@ func (w *RPCWallet) Start() {
 		}
 	}
 
-	log.Info("Connected to phored")
+	log.Info("Connected to helixd")
 	w.started = true
 }
 

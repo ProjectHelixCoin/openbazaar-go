@@ -14,7 +14,7 @@ import (
 	"github.com/projecthelixcoin/openbazaar-go/repo"
 
 	lis "github.com/projecthelixcoin/openbazaar-go/bitcoin/listeners"
-	"github.com/projecthelixcoin/openbazaar-go/bitcoin/phored"
+	"github.com/projecthelixcoin/openbazaar-go/bitcoin/helixd"
 	rep "github.com/projecthelixcoin/openbazaar-go/net/repointer"
 	ret "github.com/projecthelixcoin/openbazaar-go/net/retriever"
 	"github.com/projecthelixcoin/openbazaar-go/net/service"
@@ -169,7 +169,7 @@ func NewNode(config NodeConfig) (*Node, error) {
 		params = chaincfg.MainNetParams
 	}
 
-	wallet := phored.NewRPCWallet(mn, &params, config.RepoPath, sqliteDB, "rpc.phore.io")
+	wallet := helixd.NewRPCWallet(mn, &params, config.RepoPath, sqliteDB, "rpc.phore.io")
 
 	exchangeRates := exchange.NewBitcoinPriceFetcher(nil)
 

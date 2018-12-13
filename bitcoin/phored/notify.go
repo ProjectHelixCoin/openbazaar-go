@@ -1,4 +1,4 @@
-package phored
+package helixd
 
 import (
 	"bytes"
@@ -15,7 +15,7 @@ import (
 	"github.com/projecthelixcoin/btcd/wire"
 )
 
-var log = logging.MustGetLogger("phored")
+var log = logging.MustGetLogger("helixd")
 
 // NotificationListener listens for any transactions
 type NotificationListener struct {

@@ -71,7 +71,7 @@ func TestGetWalletConfig(t *testing.T) {
 	if config.RPCLocation != "rpc.phore.io" {
 		t.Error("RPCLocation does not equal expected value")
 	}
-	if config.Type != "phored" {
+	if config.Type != "helixd" {
 		t.Error("Type does not equal expected value")
 	}
 	_, err = GetWalletConfig([]byte{})
@@ -180,7 +180,7 @@ func TestInitConfig(t *testing.T) {
 	if err != nil {
 		t.Error("InitConfig threw an unexpected error")
 	}
-	if config.Addresses.Gateway != "/ip4/127.0.0.1/tcp/5002" {
+	if config.Addresses.Gateway != "/ip4/127.0.0.1/tcp/6002" {
 		t.Error("config.Addresses.Gateway is not set")
 	}
 }

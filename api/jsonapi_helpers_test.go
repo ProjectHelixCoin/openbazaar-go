@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/projecthelixcoin/openbazaar-go/bitcoin/phored"
+	"github.com/projecthelixcoin/openbazaar-go/bitcoin/helixd"
 	"github.com/projecthelixcoin/openbazaar-go/test"
 
 	manet "gx/ipfs/QmX3U3YXCQ6UYBxq2LVWF8dARS1hPUTEYLrSx654Qyxyw6/go-multiaddr-net"
@@ -57,8 +57,8 @@ func newTestGateway() (*Gateway, error) {
 
 	node.Wallet.Start()
 
-	// always phored so we can safely cast here
-	<-node.Wallet.(*phored.RPCWallet).InitChan()
+	// always helixd so we can safely cast here
+	<-node.Wallet.(*helixd.RPCWallet).InitChan()
 
 	return NewGateway(node, *test.GetAuthCookie(), listener.NetListener(), *apiConfig, logging.NewLogBackend(os.Stdout, "", 0))
 }

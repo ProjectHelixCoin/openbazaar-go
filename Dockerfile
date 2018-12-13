@@ -21,7 +21,7 @@ RUN go build --ldflags '-extldflags "-static"' -o /opt/openbazaard .
 
 # Run stage - Import static binary, expose ports, set up volume, and run server
 FROM scratch
-EXPOSE 5001 5002 10005
+EXPOSE 6001 6002 11005
 VOLUME /var/lib/openbazaar
 COPY --from=0 /opt/openbazaard /opt/openbazaard
 COPY --from=0 /etc/ssl/certs/ /etc/ssl/certs/

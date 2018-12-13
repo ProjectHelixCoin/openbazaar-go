@@ -39,7 +39,7 @@ import (
 	"github.com/projecthelixcoin/btcd/chaincfg/chainhash"
 	"github.com/projecthelixcoin/btcutil/base58"
 	"github.com/projecthelixcoin/openbazaar-go/api/notifications"
-	"github.com/projecthelixcoin/openbazaar-go/bitcoin/phored"
+	"github.com/projecthelixcoin/openbazaar-go/bitcoin/helixd"
 	"github.com/projecthelixcoin/openbazaar-go/core"
 	"github.com/projecthelixcoin/openbazaar-go/ipfs"
 	"github.com/projecthelixcoin/openbazaar-go/pb"
@@ -784,7 +784,7 @@ func (i *jsonAPIHandler) GETMnemonic(w http.ResponseWriter, r *http.Request) {
 func (i *jsonAPIHandler) GETBalance(w http.ResponseWriter, r *http.Request) {
 	t := time.NewTicker(60 * time.Second)
 	select {
-	case <-i.node.Wallet.(*phored.RPCWallet).InitChan():
+	case <-i.node.Wallet.(*helixd.RPCWallet).InitChan():
 		break
 	case <-t.C:
 		ErrorResponse(w, http.StatusServiceUnavailable, "ERROR_WALLET_UNINITIALIZED")

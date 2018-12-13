@@ -4,9 +4,9 @@ services:
   server:
     image: openbazaar/server
     ports:
-      - 5001
-      - 5002
-      - 10005
+      - 6001
+      - 6002
+      - 11005
     volumes:
       - obdata:/var/lib/openbazaar
 

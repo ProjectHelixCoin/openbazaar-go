@@ -1,7 +1,7 @@
 // Copyright (C) 2015-2016 The Lightning Network Developers
 // Copyright (c) 2016-2017 The OpenBazaar Developers
 
-package phored
+package helixd
 
 import (
 	"bytes"

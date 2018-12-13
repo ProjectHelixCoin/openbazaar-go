@@ -5,7 +5,7 @@ import (
 	crypto "gx/ipfs/QmaPbCnUMBohSGo3KnxEa2bHqyJVVeEEcwtqJAYxerieBo/go-libp2p-crypto"
 
 	"github.com/projecthelixcoin/btcd/chaincfg"
-	"github.com/projecthelixcoin/openbazaar-go/bitcoin/phored"
+	"github.com/projecthelixcoin/openbazaar-go/bitcoin/helixd"
 	"github.com/projecthelixcoin/openbazaar-go/core"
 	"github.com/projecthelixcoin/openbazaar-go/ipfs"
 	"github.com/projecthelixcoin/openbazaar-go/net"
@@ -62,7 +62,7 @@ func NewNode() (*core.OpenBazaarNode, error) {
 		return nil, err
 	}
 
-	wallet := phored.NewRPCWallet(mnemonic, &chaincfg.MainNetParams, repository.Path, repository.DB, "rpc.phore.io")
+	wallet := helixd.NewRPCWallet(mnemonic, &chaincfg.MainNetParams, repository.Path, repository.DB, "rpc.phore.io")
 
 	// Put it all together in an OpenBazaarNode
 	node := &core.OpenBazaarNode{
